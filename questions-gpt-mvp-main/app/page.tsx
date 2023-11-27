@@ -22,7 +22,7 @@ export default function Home() {
       setLoading(true);
 
       const res = await axios.post<{ qna: Qna[] }>("/api/create-question", {
-        topic: "omak",
+        topic,
       });
       console.log(res);
 
